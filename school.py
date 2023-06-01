@@ -5,7 +5,7 @@ app = Flask(__name__)  # initiate flask object
 
 base = connect('bas.db', check_same_thread=False)
 base.execute('''CREATE TABLE IF NOT EXISTS students
-            (id INTEGER PRIMARY KEY,
+            (id INTEGER PRIMARY KEY, 
             name TEXT NOT NULL,
             roll_number INTEGER NOT NULL UNIQUE,
             subject1 INTEGER NOT NULL,
